@@ -1,7 +1,8 @@
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
 // ==== Challenge 1: Writing Objects ==== 
-// HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
+// HR needs some information on the new interns put into a database.  
+// Given an id, email, first name, and gender. Create an object for each person in the company list:
 
 // 1,mmelloy0@psu.edu,Mitzi,F
 // 2,kdiben1@tinypic.com,Kennan,M
@@ -19,26 +20,72 @@ const example = {
 
 // Write your intern objects here:
 
+const internOne = {
+  "id": 0,
+  "email": "mmelloy0@psu.edu",
+  "name": "Mitzi",
+  "gender": "F"
+}
+
+const internTwo= {
+  "id": 1,
+  "email": "kdiben1@tinypic.com",
+  "name": "Kennan",
+  "gender": "M",
+  speak: function(){
+    console.log("Hello, my name is Kennan!")
+  }
+}
+
+const internThree = {
+  "id": 2,
+  "email": "kmummery2@wikimedia.org",
+  "name": "Keven",
+  "gender": "M"
+}
+
+const internFour = {
+  "id": 3,
+  "email": "gmartinson3@illinois.edu",
+  "name": "Gannie",
+  "gender": "M"
+}
+
+const internFive = {
+  "id": 4,
+  "email": "adaine5@samsung.com",
+  "name": "Antonietta",
+  "gender": "F",
+  multiply: function(num1, num2){
+    return num1 * num2;
+  }
+}
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
+console.log(internOne.name)
 
 // Kennan's ID
+console.log(internTwo.id)
 
 // Keven's email
+console.log(internThree.email)
 
 // Gannie's name
+console.log(internFour.name)
 
 // Antonietta's Gender
+console.log(internFive.gender)
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
+ console.log(internTwo.speak());
 
-// Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
+// Antonietta loves math, give her the ability to multiply two numbers together and return the product. 
+//Use the console.log provided as a hint.
+console.log(internFive.multiply(3,4));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
